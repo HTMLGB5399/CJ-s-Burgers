@@ -1,0 +1,153 @@
+/*Header & Footer style sheet*/
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+/*Header (navigation bar)*/
+
+#logo{
+    width:8%;
+    position:absolute;
+    cursor:pointer;
+    padding:5px 5px 5px 0px;
+    top:0px;
+}
+
+.navigation{
+   background-color: #72806d;
+    font-family:sans-serif;
+    padding:35px 20px 35px 20px;
+    width:100%;
+}
+
+
+.top-bar-links{
+   list-style: none;
+   margin-left:270px;
+   margin-bottom:2px;
+}
+
+.top-bar{
+    display: inline-block;
+    margin:0px 70px 10px 0px;  
+}
+
+
+a{
+    color:white;
+    text-decoration: underline;
+    transition: text-decoration-color, color, .2s;
+}
+
+a:hover{
+  color: #434b3f;
+  text-decoration-color: white;
+}
+
+/*Footer*/
+
+footer{
+    background-color:#72806d;
+    height: 300px;
+    width:100%;
+   
+}
+
+/*Contact Us, Careers etc.*/
+.footer-links{
+    list-style: none;
+    font-family:sans-serif;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+    text-decoration: none;
+}
+
+.bottom-links{
+    display: inline-block;
+    margin:0px 70px 0px 50px;  
+    
+}
+
+.newsletter{
+    font-family:sans-serif;
+     padding:0px 0px 0px 40px;
+     color:white;
+         text-align: center;
+         line-height:5px;
+        position:relative;
+        bottom:130px;   
+ }
+
+
+ /*Email address box*/
+ #box-submit{
+    width:20%;
+    height:23px;
+    font-size:15px;
+    text-align: center;
+    color:#545f4f;
+ }
+
+ /*Arrow button to submit email address*/
+#email-submit{
+    width:25px;
+    height:30px;
+    font-size:15px;
+    text-align: center;
+    margin-top:0;
+    background-color:#fefefe;
+    border:#fefefe solid 0px;
+    color:#99ab91;
+    transition: color 0.5s, background-color 0.5s;
+ }
+
+ #email-submit:hover{
+    background-color:#545f4f;
+  color:#fefefe;
+ }
+
+/*All of the social media icons*/
+.social-handles{
+    list-style: none;
+    font-family:sans-serif;
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+   padding-top:130px;
+}
+
+/*fa brands is the class for the social media icons (the transition is just to make when a user hovers over the mouse a little cleaner)*/
+.fa-brands{
+    transition: color 0.5s;
+}
+
+
+.fa-brands:hover{
+    color:#545f4f;
+}
+
+
+.social-icons{
+    display: inline-block;
+    margin:0px 70px 10px 0px; 
+}
+
+#copyright{
+    font-family:sans-serif;
+     padding:0px 0px 0px 40px;
+     color:white;
+         text-align: center;
+         line-height:5px;
+        position:relative;
+        bottom:30px; 
+}
+  
+

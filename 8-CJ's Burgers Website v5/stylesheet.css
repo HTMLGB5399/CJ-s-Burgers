@@ -1,0 +1,422 @@
+
+/*Header and footer styles would be added to our individual pages using this link attached to our own stylesheets*/
+@import url("/source/default.css");
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+  margin:0;
+  padding:0;
+  background-color: #fff0e1;
+}
+
+/*Slideshow container*/
+
+.slideshow-container{
+  max-width:1440px;
+  max-height:710px;
+  position: relative;
+  margin:auto;
+}
+
+/* Hide images by default*/
+.Slides{
+  display: none;
+}
+
+/* Next & Previous buttons*/
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top:50%;
+width: auto;
+margin-top: -22px;
+padding:16px;
+color:#fff0e1;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+text-decoration: none;
+}
+
+/*position next button to the right*/
+.next{
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*adds a background colour to the arrows when the user hovers over them*/
+.prev:hover, .next:hover{
+  background-color: #72806d;
+  text-decoration: none;
+}
+
+/*Caption text for slide 1 (e.g. welcome to CJ's)*/
+.text{
+  color:#fff0e1;
+  font-size:55px;
+  font-family: 'Bebas Neue', cursive;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 400px;
+  padding:0 0px 0px 899px;
+  
+  text-align: center;
+}
+
+.text-slides-sub{
+  color:#fff0e1;
+  font-size:30px;
+  font-family:'Inter Tight', sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 320px;
+  padding:0 0px 0px 850px;
+ width:30%;
+  text-align: center;
+}
+
+.text-slides-links{
+  color:#fff0e1;
+  font-size:20px;
+  font-family: 'Inter Tight', sans-serif;
+  padding: 8px 12px;
+  position: relative;
+  bottom:310px;
+  padding:0px 0px 0px 990px;
+  width: 100%;
+  
+}
+
+
+/*Text for second slide (I wanted it formatted on the left instead of the right)*/
+.text-2{
+    color:#fff0e1;
+    font-size:55px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 400px;
+    right:407px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-slides-sub-2{
+  color:#fff0e1;
+  font-size:30px;
+  font-family: 'Inter Tight', sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 320px;
+ right:940px;
+  width: 25%;
+  text-align: center;
+}
+
+.text-slides-links-2{
+  color:#fff0e1;
+  font-size:20px;
+  font-family: 'Inter Tight', sans-serif;
+  padding: 8px 12px;
+  position: relative;
+  bottom:310px;
+ padding:0px 0px 0px 230px ; 
+  width: 100%;
+  
+}
+
+
+/*Caption text for third slide*/
+.text-3{
+  color:#fff0e1;
+  font-size:55px;
+  font-family: 'Bebas Neue', cursive;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 400px;
+  padding:0 0px 0px 920px;
+
+  text-align: center;
+}
+
+.text-slides-sub-3{
+color:#fff0e1;
+font-size:30px;
+font-family: 'Inter Tight', sans-serif;
+padding: 8px 12px;
+position: absolute;
+bottom: 320px;
+padding:0 0px 0px 920px;
+width:30%;
+text-align: center;
+}
+
+.text-slides-links-3{
+color:#fff0e1;
+font-size:20px;
+font-family: 'Inter Tight', sans-serif;
+padding: 8px 12px;
+position: relative;
+bottom:310px;
+padding:0px 0px 0px 1060px;
+width: 100%;
+
+}
+
+
+
+/* Number text (1/3) */
+.numbertext{
+    color:#fff0e1;
+    font-size: 20px;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 8px 12px; 
+    position: absolute;
+    top:0;
+}
+
+/* dot buttons */
+.dot{
+    cursor: pointer;
+    height:15px;
+    width:15px;
+    margin: 10px 2px;
+    background-color: #72806d;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* .active is what .dot gets replaced with with JS (when dot is hovered over, clicked on) */
+.active, .dot:hover{
+    background-color: #434b3f;
+}
+
+/* Fading animation (targets elements with second class=fade) */
+.fade{
+    animation-name: fade ;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+/*NEW IN + OLD FAVOURITES CSS*/
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    background-color: #72806d;
+    color: #fff0e1;
+    text-align: center;
+    height:50px;
+   padding-top:10px;
+}
+
+.boxes{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/*Setting margins of individual boxes so they have the spacing I wanted*/
+#one{
+    margin-left:45px ;
+    margin-right: 40px;
+}
+
+#two{
+    margin-right: 40px;
+}
+
+
+/*Setting the container of all of the boxes so everything is the same size as each other*/
+    .container {
+      position: relative;
+      width:420px;
+      height:460px;
+    }
+    
+    .image {
+      display: block;
+      width:420px;
+      height:450px;
+      height: auto;
+    }
+    
+  /*The background colour that appears when the user hovers over a box 
+  (used to reveal text)
+  If there's too much green commenting out the BG colour makes the text just
+  appear over the image*/
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width:420px;
+      height:454px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #72806d;
+    }
+    
+  /*Background colour animation used to reveal text and hide image*/
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+  /*Title of burger*/
+    .text-oldnew1 {
+      color: #fff0e1;
+      font-size: 50px;
+      position: absolute;
+      font-family: 'Bebas Neue', cursive;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    
+    }
+
+  /*description of burger*/
+    .text-oldnew2 {
+      color: #fff0e1;
+      font-size: 20px;
+      position: absolute;
+      font-family: 'Inter Tight', sans-serif;
+      top: 67%;
+      left: 2.5%;
+
+    }
+
+ /*Link to view burger*/
+.text-oldnew3 {
+  color:#fff0e1;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'Inter Tight', sans-serif;
+  top: 82%;
+  left: 2.5%;
+  transition: color,.2s;
+}
+
+
+.text-oldnew3:hover{
+ color:#434b3f ;
+}
+
+
+
+
+
+/*MODAL CSS*/
+
+/*Modal container*/
+[id^=modal] {
+  display: none;
+  position: fixed;
+  z-index:1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height:740px;
+  width:460px;
+  background-color: #434b3f;
+  }
+
+/*selectors to target each modal box so they open when link is clicked*/
+#modal1:target {
+  display: block;
+  }
+#modal2:target {
+  display: block;
+  }
+
+#modal3:target {
+  display: block;
+  }
+
+#modal4:target {
+  display: block;
+  }
+
+#modal5:target {
+  display: block;
+  }
+
+#modal6:target {
+  display: block;
+  }
+
+
+/*Close button (X)*/
+  .close{
+  text-decoration: none;
+    color: #fff0e1;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition:color .2s;
+    margin: 0px 10px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #72806d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+   /*Modal contents (images, etc.)*/
+   .modal-image{
+      width:80%;
+      margin: 5px 35px 0px 45px;
+  }
+  
+  .heading{
+    font-family:'Bebas Neue', cursive;
+  color:#fff0e1;
+  font-size: 40px;
+ text-align: center;
+ margin: 10px 0px 3px 0px;
+  }
+  
+  .sub-text{
+  font-family: 'Inter Tight', sans-serif;
+  color:#fff0e1;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0px 20px;
+  }
+  
+  .price{
+    font-family:'Bebas Neue', cursive;
+  color:#fff0e1;
+  font-size: 25px;
+  text-align: center;
+  }
+  
+  .order-now{
+  font-family: 'Inter Tight', sans-serif;
+  color:#fff0e1;
+  font-size: 20px;
+  margin: 0 170px;
+  transition:color, .2s;
+  }
+  
+  .order-now:hover{
+      color:#72806d;
+  }
+  

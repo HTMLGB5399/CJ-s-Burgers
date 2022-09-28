@@ -1,0 +1,163 @@
+
+@import url("/source/default.css");
+
+/* importing fonts  */
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter Tight', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@300&display=swap');
+
+/* general rules  */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:  #fff0e1;
+}
+
+
+
+nav {
+    background-color: #72806D;
+    height: 80px;
+
+/*G- had to add text-align left to nav to override text align center in body */
+    text-align:left !important;
+}
+
+/* formatting start page (initially was to be a header, hence name) */
+
+.header {
+    position: relative;
+    text-align: right;
+    color: #fff0e1;
+}
+
+/* text and button on start page  */
+
+.headerImage {
+    width: 100%;
+    border-bottom: solid 15px #72806D;
+}
+
+.header > .title {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    padding-right: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32pt;
+}
+
+.header > .text {
+    position: absolute;
+    top: 23%;
+    left: 65%;
+    padding-right: 5%;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.header > .btn {
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    background-color: transparent;
+    color: #fff0e1;
+    font-size: 14pt;
+    font-family: 'Inter Tight', sans-serif;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    text-decoration: underline;
+}
+
+.header > .btn:hover {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+/* quiz formatting  */
+
+.quizBody {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 20px;
+    border: 2px solid #72806D;
+    border-radius: 50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #72806D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* active quiz formatting (buttobns, questions etc) */
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz > .title {
+    color: #fff0e1;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+}
+
+#quizbuttons {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 30px;
+}
+
+#quizbuttons * {
+    background-color:  #fff0e1 ;
+    border: 0px;
+    color: #72806D;
+    width: 300px;
+    height: 80px;
+    border-radius: 4px; 
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16pt;
+}
+
+#quizbuttons > .answer:hover {
+    font-weight: bold;
+    /* border: solid 2px black; */
+}
+
+/* quiz result formatting  */
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff0e1;
+}
+
+#resultsImgs * {
+    border-radius: 30px;
+}
+
+#resultTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38pt;
+}
+
+#resultExplain {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20pt;
+    padding-right: 30px;
+    padding-left: 30px;
+}

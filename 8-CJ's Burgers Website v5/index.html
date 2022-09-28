@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--JS link-->
+    <script src="app.js" defer></script>
+
+    <!--Font Awesome kit (for social media icons in footer)-->
+    <script src="https://kit.fontawesome.com/7244c87a1f.js" crossorigin="anonymous"></script>
+
+    <!--Website title-->
+    <title>CJ's</title>
+
+    <!--Favicon (burger icon next to website title)-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+   
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+
+
+    <!--HEADER-->
+<nav class="navigation">
+    <!--Icon code would go here-->
+    <a href="/"><img id="logo" src="/Images/logo rough 2 transparent.png" alt="logo v2"></a>
+
+    <!--Links in navigation bar-->
+    <ul class="top-bar-links">
+        <li class="top-bar"><a href="/">About Us</a></li>
+        <li class="top-bar"><a href="/">Our Products</a></li>
+        <li class="top-bar"><a href="/">Locations</a></li>
+        <li class="top-bar"><a href="/Amanda Rewards/rewards.html">Rewards</a></li>
+        <li class="top-bar"><a href="/CJ Quiz/quizpage.html">Which Burger Are You?</a></li>
+    </ul>
+</nav>
+
+
+
+<main>
+<!--Image & Introductory Text-->
+
+<!--Slideshow container-->
+<div class="slideshow-container">
+
+    <!--IMAGE 1-->
+<div class="Slides fade">
+  <!--Number text (1/3 in top left)-->
+    <div class="numbertext">1/3</div>
+    <img src="/Images/main HP image pexels-rajesh-tp-1600743.jpg" style="width:1440px;height:710px">
+    <div class="text">Welcome to CJ's!</div>
+    <div class="text-slides-sub">Offering plant-based burgers since 2022</div>
+    <a class="text-slides-links" href="#menu-defer">View our menu ></a>
+</div>
+
+   <!--IMAGE 2-->
+<div class="Slides fade">
+    <div class="numbertext">2/3</div>
+    <img src="/Images/Main 2 pexels-rajesh-tp-1600727 copy 3.jpg" style="width:1440px;height:710px">
+    <div class="text-2">Rewards</div>
+    <div class="text-slides-sub-2">
+      Eat, earn points and redeem free rewards!</div>
+    <a class="text-slides-links-2" href="/Amanda Rewards/rewards.html">Claim rewards ></a>
+
+</div>
+
+   <!--IMAGE 3-->
+<div class="Slides fade">
+    <div class="numbertext">3/3</div>
+    <img src="/Images/Main 3 pexels-rajesh-tp-1633579 copy 3.jpg" style="width:1440px;height:710px">
+    <div class="text-3">Which Burger Are You?</div>
+    <div class="text-slides-sub-3">Ever wanted to know which burger suits you best?</div>
+    <a class="text-slides-links-3" href="/CJ Quiz/quizpage.html">Take the quiz ></a>
+</div>
+
+<!--Next and previous buttons-->
+<!--&#10094 is the Unicode Decimal Code for a left arrow-->
+<a class="prev" onclick="plusSlides (-1)">&#10094;</a>
+<!--&#10095 is the Unicode Decimal Code for a right arrow-->
+<a class="next" onclick="plusSlides (1)">&#10095;</a>
+</div>
+<br>
+
+<!--Dot buttons-->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+<!--NEW IN-->
+<!--(default image sizes: 4000px x 4321px)-->
+<h2 id="menu-defer" class="title">New In</h2>
+
+<div class="boxes">
+    
+  <!--IMAGE ONE-->
+    <div class="container" id="one">
+    <img src="/Images/new in 1 13573666 .jpg" alt="burger" class="image">
+    <!--Overlay to create image/text transition-->
+    <div class="overlay">
+      <div class="text-oldnew1">The Leaning Tower of Veggie</div>
+      <div class="text-oldnew2">The ultimate veggie burger!</div>
+
+     <!--pop-up box link-->
+      <a class="text-oldnew3" href="#modal1">View item></a>
+    </div>
+  </div>
+
+    <!--IMAGE TWO-->
+  <div class="container" id="two">
+      <img src="/Images/new in 2 13573663 .jpg" alt="burger" class="image">
+      <div class="overlay">
+        <div class="text-oldnew1">The Pizza Burger Double</div>
+        <div class="text-oldnew2">Ever wondered what pizza and a burger together tastes like?</div>
+
+        <!--pop-up box link-->
+        <a class="text-oldnew3" href="#modal2">View item></a>
+      </div>
+  </div>
+
+      <!--IMAGE THREE-->
+  <div class="container" id="three">
+      <img src="/Images/new in 3 13573664 .jpg" alt="burger" class="image">
+      <div class="overlay">
+        <div class="text-oldnew1">The Vegetarian Chicken Deluxe</div>
+        <div class="text-oldnew2">A vegetable protein burger with a twist!</div>
+
+       <!--pop-up box link-->
+        <a class="text-oldnew3" href="#modal3">View item></a>
+      </div>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+<!--OLD FAVOURITES-->
+<h3 class="title">Old Favourites</h3>
+<div class="boxes">
+        
+
+      <!--IMAGE FOUR-->
+    <div class="container" id="one">
+    <img src="/Images/old faves 1.jpg" alt="burger" class="image">
+    <div class="overlay">
+      <div class="text-oldnew1">The Classic Veggie Mayo 2.0</div>
+      <div class="text-oldnew2">Our original veggie burger, back and better than ever!
+      </div>
+
+         <!--pop-up box link-->
+      <a class="text-oldnew3" href="#modal4">View item></a>
+    </div>
+  </div>
+
+       <!--IMAGE FIVE-->
+  <div class="container" id="two">
+      <img src="/Images/old faves 2.jpg" alt="burger" class="image">
+      <div class="overlay">
+        <div class="text-oldnew1">The Chicken Classic</div>
+        <div class="text-oldnew2">The original plant based chicken burger</div>
+
+         <!--pop-up box link-->
+        <a class="text-oldnew3" href="#modal5">View item></a>
+      </div>
+  </div>
+
+        <!--IMAGE SIX-->
+  <div class="container" id="three">
+      <img src="/Images/old faves 3.jpg" alt="burger" class="image">
+      <div class="overlay">
+        <div class="text-oldnew1">Double Trouble Cheese Burger </div>
+        <div class="text-oldnew2">Our original cheese burger, doubled!</div>
+
+      <!--pop-up box link-->
+        <a class="text-oldnew3" href="#modal6">View item></a>
+      </div>
+
+  </div>
+    </div>
+  </div>
+
+<!--MODAL BOXES-->
+<!--Note: &times; is the character entity denoting X -->
+
+<!--Container-->
+<div id="content">
+
+  <!--MODAL 1-->
+<div id="modal1">
+  <a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/new in 1 13573666 .jpg" alt="">
+  <p class="heading">The Leaning Tower of Veggie</p>
+  <p class="price">£8.50</p>
+  <p class="sub-text">A pea protein burger topped with tomatoes, garlic mushrooms and lettuce, nestled in a gluten free brioche style burger bun.<br><br> Suitable for coeliacs, vegans and vegetarians. </p>
+  <a class="order-now" href="#">Order now ></a>
+
+</div>
+
+  <!--MODAL 2-->
+<div id="modal2"><a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/new in 2 13573663 .jpg" alt="">
+  <p class="heading">The Pizza Burger Double </p>
+  <p class="price">£10.50</p>
+  <p class="sub-text">
+    Double pea-protein burgers topped with cheese and a tomato sauce, on a bed of mushrooms, lettuce, onions and tomatoes. 
+   <br><br> *Please note that this burger is not suitable for those with gluten allergies. </p>
+  <a class="order-now" href="#">Order now ></a>
+</div>
+
+  <!--MODAL 3-->
+<div id="modal3"><a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/new in 3 13573664 .jpg" alt="">
+  <p class="heading">The Vegetarian Chicken Deluxe</p>
+  <p class="price">£7.00</p>
+  <p class="sub-text">A vegetable protein burger wrapped in plant-based chicken drumsticks and completed with assorted vegetables. Optional add-ins include cheese and tomato sauce.
+    <br><br>*Please note that this burger is not suitable for those with gluten allergies.</p>
+  <a class="order-now" href="#">Order now ></a>
+</div>
+
+  <!--MODAL 4-->
+<div id="modal4"><a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/old faves 1.jpg" alt="">
+  <p class="heading">The Classic Veggie Mayo 2.0</p>
+  <p class="price">£8.50</p>
+  <p class="sub-text">The original vegetable protein burger that started it all, completed with mayonnaise and optional add-ins of cheese, onions, tomatoes, lettuce, and relish.<br><br>Suitable for coeliacs and vegetarians.</p>
+  <a class="order-now" href="#">Order now ></a>
+</div>
+
+  <!--MODAL 5-->
+<div id="modal5"><a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/old faves 2.jpg" alt="">
+  <p class="heading">The Chicken Classic </p>
+  <p class="price">£7.80</p>
+  <p class="sub-text">A plant based chicken burger with optional add-ins of mayonnaise, cheese, tomato relish, and lettuce.<br><br>Suitable for coeliacs and vegetarians.</p>
+  <a class="order-now" href="#">Order now ></a>
+</div>
+
+  <!--MODAL 6-->
+<div id="modal6"><a class="close" href="#">&times;</a>
+  <img class="modal-image" src="/Images/old faves 3.jpg" alt="">
+  <p class="heading">Double Trouble Cheese Burger </p>
+  <p class="price">£9.20</p>
+  <p class="sub-text">Two pea protein burgers stacked between layers of cheese, relish, and mayonnaise, sandwiched in our classic burger bun.<br><br>*Please note that this burger <em>is</em> suitable for those with gluten allergies if requested.
+</p>
+  <a class="order-now" href="#">Order now ></a>
+</div>
+
+</div>
+</main>
+
+
+
+
+
+
+<footer>
+  <!--Links-->
+  <ol class="footer-links">
+  <li class="bottom-links"> <a href="#">Contact Us</li></a>
+  <li class="bottom-links"><a href="#">Careers</li></a>
+  <li class="bottom-links"><a href="#">Privacy Policy</li></a>
+  </ol>
+  
+  <!--Social media handles (target="_blank" will open each link in a new tab)-->
+  <ol class="social-handles">
+  <li class="social-icons"> <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></li> </a>
+   <li class="social-icons"> <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i></li></a> 
+   <li class="social-icons"> <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter fa-2xl"></i></li></a> 
+  <li class="social-icons"> <a href="https://www.tiktok.com" target="_blank"> <i class="fa-brands fa-tiktok fa-2xl"></i></li></a> 
+  </ol>
+  
+  <!--Newsletter form-->
+  <div class="newsletter">
+  <p class="newsletter-text">For new menu releases, exclusive rewards, and more, sign up for our newsletter:</p>
+  <form action="#">
+      <input id="box-submit" type="text" placeholder="Type email here" required>
+      <button id="email-submit" type="submit">&#10095;</button>
+  </form>
+  </div>
+  
+  <p id="copyright">Ⓒ CJ's Burgers 2022</p>
+  
+  </footer>
+ 
+
+</body>
+</html>

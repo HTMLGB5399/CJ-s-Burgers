@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizstyle.css">
+    <script src="quizsimple.js" defer></script>
+    <title>CJ's - Which burger are you?</title>
+    <script src="https://kit.fontawesome.com/7244c87a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--HEADER-->
+    <nav class="navigation">
+        <!--Icon code would go here-->
+        <a href="/"><img id="logo" src="/Images/logo rough 2 transparent.png" alt="logo v2"></a>
+    
+        <!--Links in navigation bar-->
+        <ul class="top-bar-links">
+            <li class="top-bar"><a href="/">About Us</a></li>
+            <li class="top-bar"><a href="/">Our Products</a></li>
+            <li class="top-bar"><a href="/">Locations</a></li>
+            <li class="top-bar"><a href="/Amanda Rewards/rewards.html">Rewards</a></li>
+            <li class="top-bar"><a href="/CJ Quiz/quizpage.html">Which Burger Are You?</a></li>
+        </ul>
+    </nav>
+
+<!-- image and text at start of page, before quiz triggered  -->
+
+<div id="startPage" class="header">
+    <img class="headerImage" src="/Images/Main 3 pexels-rajesh-tp-1633579 copy 3.jpg" alt="A meal at CJ's">
+    <div class="title">Which CJ's Burger are you?</div>
+    <div class="text">
+        <!-- Ever wanted to know which CJ's burger matches your personality?
+        Or maybe you're feeling indecisive and just want to know which burger you should
+        try next? Well, look no further - with our fun quiz you can find out which burger
+        you are in your soul! -->
+        Here at CJ's, we want our burgers to be a vacation for your taste buds, taking you
+        away from the monotony of daily life and transporting you on a dreamy flavour journey.
+        To find out which burger will give you the perfect flavour vacation, take our simple
+        quiz.
+    </div>
+    <button class="btn" id="startQuiz">Start quiz --></button>
+</div>
+
+
+
+<!-- quiz itself  -->
+
+<div id="mainQuiz" class="quizBody">
+    
+    <div class="quiz">
+        <div class="title" id="question">Title</div>
+        <div id="quizbuttons">
+            <button class="answer" id="answer1">Answer 1</button>
+            <button class="answer" id="answer2">Answer 2</button>
+            <button class="answer" id="answer3">Answer 3</button>
+            <button class="answer" id="answer4">Answer 4</button>
+        </div>
+    </div>
+
+    <div id="resultsPage" class="result">
+        <div id="resultsImgs">
+            <img id="resultImg1" width="400px" src="/Images/old faves 1.jpg" alt="You as a burger - classic veggie mayo">
+            <img id="resultImg2" width="400px" src="/Images/new in 1 13573666 .jpg" alt="You as a burger - the leaning tower of veggie">
+            <img id="resultImg3" width="400px" src="/Images/new in 2 13573663 .jpg" alt="You as a burger - the pizza burger double">
+            <img id="resultImg4" width="400px" src="/Images/old faves 3.jpg" alt="You as a burger - the double trouble cheeseburger">
+        </div>
+        <div class="text">
+            <h1 id="resultTitle" class="title">Result</h1>
+            <p id="resultExplain" class="elaboration">The burger you are</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer  -->
+
+
+<footer>
+    <!--Links-->
+    <ol class="footer-links">
+    <li class="bottom-links"> <a href="#">Contact Us</li></a>
+    <li class="bottom-links"><a href="#">Careers</li></a>
+    <li class="bottom-links"><a href="#">Privacy Policy</li></a>
+    </ol>
+    
+    <!--Social media handles (target="_blank" will open each link in a new tab)-->
+    <ol class="social-handles">
+    <li class="social-icons"> <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></li> </a>
+     <li class="social-icons"> <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i></li></a> 
+     <li class="social-icons"> <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter fa-2xl"></i></li></a> 
+    <li class="social-icons"> <a href="https://www.tiktok.com" target="_blank"> <i class="fa-brands fa-tiktok fa-2xl"></i></li></a> 
+    </ol>
+    
+    <!--Newsletter form-->
+    <div class="newsletter">
+    <p class="newsletter-text">For new menu releases, exclusive rewards, and more, sign up for our newsletter:</p>
+    <form action="#">
+        <input id="box-submit" type="text" placeholder="Type email here" required>
+        <button id="email-submit" type="submit">&#10095;</button>
+    </form>
+    </div>
+    
+    <p id="copyright">Ⓒ CJ's Burgers 2022</p>
+    
+    </footer>
+
+</body>
+</html>
